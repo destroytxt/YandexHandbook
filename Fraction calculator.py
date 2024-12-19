@@ -163,19 +163,3 @@ class Fraction:
     def __ne__(self, other):
         num, other_num = self.__comparison(other)
         return num != other_num
-
-
-a = Fraction(1, 2)
-b = Fraction('2/3')
-c, d = map(Fraction.reverse, (3 - a, 2 / b))
-print(a, b, c, d)
-print(a < b, c > d)
-a += 9
-print(a)
-a -= 2
-print(a)
-b *= a
-print(a)
-b /= 4
-print(b)
-print(a <= 7/3, b == 2/7, c >= 98, d != 1/2)
